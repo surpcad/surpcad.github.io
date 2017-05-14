@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
 	<!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="admin_site/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="admin_site/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="admin_site/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
@@ -26,15 +26,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/img/logo.png" />
+                    <a class="navbar-brand" href="admin_calls.html">
+                        <img src="admin_site/img/logo.png" />
 
                     </a>
                     
                 </div>
               
                 <span class="logout-spn" >
-                  <a href="../index.html" style="color:#fff;">Выйти</a>  
+                  <a href="index.html" style="color:#fff;">Выйти</a>  
 
                 </span>
             </div>
@@ -44,19 +44,19 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li class="active-link">
-                        <a href="calls.html"><i class="fa fa-phone-square"></i>Журнал звонков <span class="badge">+2</span></a>
+                        <a href="admin_calls.html"><i class="fa fa-phone-square"></i>Журнал звонков <span class="badge">+2</span></a>
                     </li>
                     <li>
                         <a href="admin_premises.html"><i class="fa fa-university"></i>Помещения</a>
                     </li>
                     <li>
-                        <a href="clients.html"><i class="fa fa-user"></i>Клиенты</a>
+                        <a href="admin_clients.html"><i class="fa fa-user"></i>Клиенты</a>
                     </li>
                     <li>
                         <a href="admin_information.html"><i class="fa fa-gavel"></i>Информация об организации</a>
                     </li>
                     <li>
-                        <a href="contracts.html"><i class="fa fa-file-text"></i>Договора</a>
+                        <a href="admin_contracts.html"><i class="fa fa-file-text"></i>Договора</a>
                     </li>
                     
                 </ul>
@@ -68,57 +68,77 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-lg-12">
-                     <h2>Информация об организации</h2>   
+                     <h2>Заказанные звонки</h2>   
                     </div>
                 </div>              
                  <!-- /. ROW  -->
                   <hr />
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="alert alert-success">
+                             <strong>Добро пожаловать!</strong> Заказов на звонки пока не поступало.
+                        </div>
+                       
+                    </div>
+                </div>
+				<div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="alert alert-danger">
+                             <strong>Добро пожаловать!</strong> Поступило <strong>2</strong> заказа на звонок.
+                        </div>
+                       
+                    </div>
+                </div>
+				
 				<br>
                 <div class="col-lg-12 col-md-12">
-                        <h2>Список документов</h2>
+                        <h2>Журнал звонков</h2>
 						
 						<br>
-						<a href="add_information.html" class="btn btn-primary">Добавить запись</a>
+						<a href="admin_add_call.html" class="btn btn-primary">Добавить запись</a>
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>Документ</th>
-                                        <th>Описание</th>
+                                        <th>Время</th>
+                                        <th>Имя</th>
+                                        <th>Телефон</th>
+										<th>Помещение</th>
+										<th>Комментарий</th>
 										<th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>
-											<i class="glyphicon glyphicon-save" aria-hidden="true"></i>
-											<a href="../information/Договор аренды офиса.docx" target="_blank">Договор аренды офиса.docx</a>
-										</td>
-                                        <td>Шаблон договора аренды офиса на 11 месяцев</td>
+                                    <tr class="danger">
+                                        <td>13:58 04.04.2017</td>
+                                        <td>Сергей</td>
+                                        <td>8-963-568-78-63</td>
+										<td>-</td>
+										<td>-</td>
 										<td><a href="#">Изменить</a> | <a href="#">Удалить</a></td>
                                     </tr>
-									<tr>
-                                        <td>
-											<i class="glyphicon glyphicon-save" aria-hidden="true"></i>
-											<a href="../information/Отчёт за 2016 год.xlsx" target="_blank">Отчёт за 2016 год.xlsx</a>
-										</td>
-                                        <td>Финансовый отчёт за 2016</td>
+									<tr class="danger">
+                                        <td>14:10 04.04.2017</td>
+                                        <td>Василий</td>
+                                        <td>8-925-865-87-36</td>
+										<td>-</td>
+										<td>-</td>
 										<td><a href="#">Изменить</a> | <a href="#">Удалить</a></td>
                                     </tr>
-									<tr>
-                                        <td>
-											<i class="glyphicon glyphicon-save" aria-hidden="true"></i>
-											<a href="../information/Договор аренды офиса.docx" target="_blank">Договор аренды офиса.docx</a>
-										</td>
-                                        <td>Шаблон договора аренды офиса на 11 месяцев</td>
+                                    <tr class="success">
+                                        <td>14:10 03.04.2017</td>
+                                        <td>Инокентий</td>
+                                        <td>8-921-887-00-00</td>
+										<td>Волгоград, ул. Ленина, 777</td>
+										<td>Со следующего месяца должен позвонить и взять в аренду</td>
 										<td><a href="#">Изменить</a> | <a href="#">Удалить</a></td>
                                     </tr>
-									<tr>
-                                        <td>
-											<i class="glyphicon glyphicon-save" aria-hidden="true"></i>
-											<a href="../information/Отчёт за 2016 год.xlsx" target="_blank">Отчёт за 2016 год.xlsx</a>
-										</td>
-                                        <td>Финансовый отчёт за 2016</td>
+									<tr class="success">
+                                        <td>14:10 03.04.2017</td>
+                                        <td>Пафнутий</td>
+                                        <td>8-721-001-10-01</td>
+										<td>Волгоград, ул. Пушкина, 123</td>
+										<td>Не устроили условия аренды</td>
 										<td><a href="#">Изменить</a> | <a href="#">Удалить</a></td>
                                     </tr>
                                 </tbody>
@@ -135,7 +155,7 @@
     
             <div class="row">
                 <div class="col-lg-12" >
-                    &copy;  2017 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank">binarytheme</a>
+                    &copy;  2017 ОАО "Волгоградгоргражданстрой" | Design by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank">binarytheme</a>
                 </div>
             </div>
         </div>
@@ -144,11 +164,11 @@
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="admin_site/js/jquery-1.10.2.js"></script>
       <!-- BOOTSTRAP SCRIPTS -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="admin_site/js/bootstrap.min.js"></script>
       <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
+    <script src="admin_site/js/custom.js"></script>
     
    
 </body>

@@ -312,6 +312,28 @@ h3.title span,h2.title span {
     border: none;
     background: #FFFFFF;
 }
+.btn-call-master{
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 0px;
+    outline: none;
+    border: none;
+    background: #98CD23;
+    width: 100%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.btn-call-master:hover{
+    background: #00aeef;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;	
+}
 .sub input[type="submit"] {
     font-size: 16px;
     color: #fff;
@@ -1557,6 +1579,7 @@ margin-left:5px;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;	
 }
+
 .exp-gd-info{
     background: #848484;	
 }
